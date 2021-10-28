@@ -12,7 +12,7 @@
 <h1>컨텐츠2</h1>
 <hr>
 <h3>절대경로 링크</h3>
-<a href="/jsp1025/04path/02browser1.jsp">1번 파일로 이동</a>
+<a href="<%= request.getContextPath() %>/04path/02browser1.jsp">1번 파일로 이동</a>
 
 <h3>상대경로 링크</h3>
 <a href="02browser1.jsp">1번 파일로 상대 경로</a>

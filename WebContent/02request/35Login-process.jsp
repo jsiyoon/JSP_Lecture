@@ -15,13 +15,17 @@ String pw = request.getParameter("password");
 
 if(id != null && pw != null){
 	if(id.equals("myid") && pw.equals("mypassword")){
-		out.print("로그인 성공");
+%>
+		<h1>로그인 성공</h1>
+<%
 	}else{
-		out.print("아이디나 패스워드가 일치하지 않습니다.");
+%>
+		<h1>아이디나 패스워드가 일치하지 않습니다</h1>
+<%
 	}
 }
 %>
 <hr>
-<a href="/myjsp/02request/34Login-form.jsp"><로그인 페이지로 돌아가기></a>
+<a href="<%= request.getContextPath() %>/02request/34Login-form.jsp"><로그인 페이지로 돌아가기></a>
 </body>
 </html>

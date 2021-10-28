@@ -9,10 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="<%= request.getContextPath() %>/02request/35Login-process.jsp" method="post">
-	id : <input type="text" name="id"><br>
-	password : <input type="text" name="password"><br>
-	<input type="submit" value="로그인">
-</form>
+<h1>context path(context root)</h1>
+context root : <%= request.getContextPath() %> <%-- 루트 경로 출력 --%>
 </body>
 </html>

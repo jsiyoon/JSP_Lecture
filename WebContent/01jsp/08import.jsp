@@ -20,7 +20,7 @@
 </body>
 <br>
 <%
-	ArrayList arr1 = new ArrayList<>();
+	ArrayList<String> arr1 = new ArrayList<>();
 	HashMap<String, String> map1 = new HashMap<>();
 	HashSet<String> set1 = new HashSet<>();
 %>

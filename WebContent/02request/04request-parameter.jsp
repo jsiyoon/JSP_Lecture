@@ -10,7 +10,7 @@
 <body>
 <h1>request parameter</h1>
 
-<p><%= request.getParameter("name") %></p>
-<p><%= request.getParameter("age") %></p>
+<p>name : <%= request.getParameter("name") %></p>
+<p>age : <%= request.getParameter("age") %></p>
 </body>
 </html>

@@ -9,7 +9,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%--169p 그림 7.11 page(x) -> include --%>
 
 <h1>멋진 제목</h1>
 

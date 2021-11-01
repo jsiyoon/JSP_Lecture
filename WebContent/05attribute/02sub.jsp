@@ -14,6 +14,6 @@ Integer n2 = (Integer)request.getAttribute("num2");
 
 <hr>
 <div>
-<%-- el로 attribute를 편리하게 이용 --%>
+<%-- 위와 같은 결과 el로 attribute를 편리하게 이용 --%>
 ${num1 } + ${num2 } = ${num1+num2 }
 </div>

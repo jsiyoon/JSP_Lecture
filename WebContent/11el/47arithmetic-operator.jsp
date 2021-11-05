@@ -10,14 +10,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p>name : ${param.name }</p>
-<p>food1 : ${paramValues.food[0] }</p>
-<p>food2 : ${paramValues.food[1] }</p>
-<p>food3 : ${paramValues.food[2] }</p>
+<%--http://localhost:8080/jsp1025/11el/47arithmetic-operator.jsp?a=5&b=3 --%>
+<%
+%>
 
-<hr>
-<c:forEach items="${paramValues.food}" var="food" varStatus="status">
- <p>food ${status.count } : ${food }</p>
-</c:forEach>
+<p>a + b : ${param.a + param.b }</p>
+<p>a - b : ${param.a - param.b }</p>
+<p>a * b : ${param.a * param.b }</p>
+<p>a / b : ${param.a / param.b }</p>
+<p>a % b : ${param.a % param.b }</p>
 </body>
 </html>

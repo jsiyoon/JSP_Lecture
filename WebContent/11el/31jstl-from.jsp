@@ -10,14 +10,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p>name : ${param.name }</p>
-<p>food1 : ${paramValues.food[0] }</p>
-<p>food2 : ${paramValues.food[1] }</p>
-<p>food3 : ${paramValues.food[2] }</p>
+<%
+List<String> list = new ArrayList<>();
+list.add("apple");
+list.add("google");
+list.add("samsung");
+list.add("lg");
 
-<hr>
-<c:forEach items="${paramValues.food}" var="food" varStatus="status">
- <p>food ${status.count } : ${food }</p>
-</c:forEach>
+session.setAttribute("data", list);
+response.sendRedirect("31jstl-to.jsp");
+%>
 </body>
 </html>

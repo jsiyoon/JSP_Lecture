@@ -10,14 +10,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p>name : ${param.name }</p>
-<p>food1 : ${paramValues.food[0] }</p>
-<p>food2 : ${paramValues.food[1] }</p>
-<p>food3 : ${paramValues.food[2] }</p>
-
-<hr>
-<c:forEach items="${paramValues.food}" var="food" varStatus="status">
- <p>food ${status.count } : ${food }</p>
-</c:forEach>
+<h1>el header기본객체</h1>
+<%-- 요청정보의 헤더에 있는 값들 출력 --%>
+<p>${header.connection }</p>
+<p>${header.host }</p>
+<p>${header["user-agent"] }</p>
+<p>${header["accept"] }</p>
 </body>
 </html>

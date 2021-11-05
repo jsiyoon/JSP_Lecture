@@ -10,14 +10,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p>name : ${param.name }</p>
-<p>food1 : ${paramValues.food[0] }</p>
-<p>food2 : ${paramValues.food[1] }</p>
-<p>food3 : ${paramValues.food[2] }</p>
-
-<hr>
-<c:forEach items="${paramValues.food}" var="food" varStatus="status">
- <p>food ${status.count } : ${food }</p>
-</c:forEach>
+<h1>el cookie 기본객체</h1>
+<%--쿠키 관련값 출력 기본 객체 --%>
+<p>${cookie.JSESSIONID }</p>
+<p>${cookie.JSESSIONID.name }</p>
+<p>${cookie.JSESSIONID.value }</p>
 </body>
 </html>

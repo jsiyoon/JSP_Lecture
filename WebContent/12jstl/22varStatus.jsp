@@ -9,12 +9,12 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="<%= request.getContextPath()%>/resource/css/icon/css/all.css">
 <style>
+	table, th, td {
+		border: 1px solid black;
+	}
 	table {
 		border-collapse: collapse;
 		width: 100%;
-	}
-	table, th, td {
-		border: 1px solid black;
 	}
 </style>
 <title>Insert title here</title>
@@ -42,15 +42,15 @@ pageContext.setAttribute("list", new String[] {"rm", "jk", "jimin", "v"});
 	</tr>
 	<c:forEach items="${list }" var="item" varStatus="status">
 		<tr>
-			<th>${item }</th>
-			<th>${status.index }</th>
-			<th>${status.count }</th>
-			<th>${status.begin }</th>
-			<th>${status.end }</th>
-			<th>${status.step }</th>
-			<th>${status.first }</th>
-			<th>${status.last }</th>
-			<th>${status.current }</th>
+			<td>${item }</td>
+			<td>${status.index }</td>
+			<td>${status.count }</td>
+			<td>${status.begin }</td>
+			<td>${status.end }</td>
+			<td>${status.step }</td>
+			<td>${status.first }</td>
+			<td>${status.last }</td>
+			<td>${status.current }</td>
 		</tr>
 	</c:forEach>
 </table>

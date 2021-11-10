@@ -10,14 +10,14 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="<%= request.getContextPath()%>/resource/css/icon/css/all.css">
 <style>
-	table{
-		border-collapse : collapse;
+	table {
+		border-collapse: collapse;
 		width: 100%;
 	}
-	talbe, tr, td{
+	table, th, td {
 		border: 1px solid black;
 	}
-</style>
+	</style>
 
 <title>Insert title here</title>
 </head>
@@ -82,20 +82,21 @@ pageContext.setAttribute("books", list);
 <hr>
 <h1>forEach</h1>
 <table>
-<c:forEach items="${books }" var="book" varStatus="status">
 	<tr>
 		<th>#</th>
 		<th>제목</th>
 		<th>저자</th>
 		<th>가격</th>
 	</tr>
-	<tr>
-		<td>${status.count }<td>
-		<td>${book.title }</td>
-		<td>${book.writer }</td>
-		<td>${book.price }</td>
-	</tr>
-</c:forEach>
+	
+	<c:forEach items="${books }" var="book" varStatus="status">
+		<tr>
+			<td>${status.count }</td>
+			<td>${book.title }</td>
+			<td>${book.writer }</td>
+			<td>${book.price }</td>
+		</tr>
+	</c:forEach>
 </table>
 </body>
 </html>

@@ -1,0 +1,14 @@
+	.myBtn{
+		padding: 5px;
+		border: 2px solid green;
+		background-color: blue;
+		color: white;
+	}
+	.myHeader{
+	 	color: pink;
+	 	font-size: 30px;
+	 	font-style: Italic;
+	 	border: 3px solid purple;
+	 	width: 50%;
+	 	padding: 5px;
+	}

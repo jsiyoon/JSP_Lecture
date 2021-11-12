@@ -25,7 +25,7 @@
 <body>
 <h1>책 목록  (${fn:length(books) }권)</h1>
 
-<a href="25book-form.jsp">책 등록하기</a>
+<a href="<%= request.getContextPath() %>/14bootstrap/11form.jsp">책 등록하기</a>
 <c:if test="${empty books }">
 	<p>아직 저장된 책이 없습니다.</p>
 </c:if>

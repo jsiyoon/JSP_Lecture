@@ -46,15 +46,14 @@
 								<td>${book.stock }</td>
 								<td>
 									<c:url value="/servlet07/remove" var="removeUrl">
-										<c:param name="id" value="${status.index }"/>
+										<c:param name="id" value="${status.index }" />
 									</c:url>
 									<button class="btn btn-danger removeBtn" data-toggle="modal" data-target="#confirmModal1" data-link="${removeUrl }">
 										<i class="fas fa-trash"></i>
-									</button>
-								</td>
+									</button></td>
 								<td>
 									<c:url value="/servlet07/modify" var="modifyUrl">
-										<c:param name="id" value="${status.index }"/>
+										<c:param name="id" value="${status.index }" />
 									</c:url>
 									<a href="${modifyUrl }" class="btn btn-warning">
 										<i class="fas fa-edit"></i>
@@ -90,8 +89,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
 	<script>
-		$(document).ready(function(){
-			$(".removeBtn").click(function(){
+		$(document).ready(function() {
+			$(".removeBtn").click(function() {
 				let link = $(this).attr("data-link");
 				$("#removeModalBtn1").attr("href", link);
 			});

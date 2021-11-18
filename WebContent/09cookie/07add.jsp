@@ -10,7 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>쿠키 추가</h1>
+<h1>쿠키 추가(생성)</h1>
 <%
 Cookie cookie = new Cookie("remove-cookie", "remove-value");
 response.addCookie(cookie);

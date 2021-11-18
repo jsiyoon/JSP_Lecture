@@ -12,7 +12,7 @@
 <body>
 <h1>세션 쿠키 maxAge 재설정</h1>
 <%
-Cookie[] cookies = request.getCookies();
+Cookie[] cookies = request.getCookies();//쿠키 값 읽어오기
 
 Cookie sessionCookie = null;
 for(Cookie cookie : cookies){

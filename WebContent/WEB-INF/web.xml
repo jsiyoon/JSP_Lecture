@@ -19,12 +19,13 @@
 		<session-timeout>30</session-timeout>
 	</session-config>
 
+
 	<!-- 서블릿 설정 -->
-	 <servlet>
+	 <servlet><!-- servlet정의 -->
 		<servlet-name>servlet0103</servlet-name>
 		<servlet-class>servlet01.S03Servlet</servlet-class>
 	</servlet>
-	<servlet-mapping>
+	<servlet-mapping><!-- servlet매핑 -->
 		<servlet-name>servlet0103</servlet-name>
 		<url-pattern>/servlet01/servlet03</url-pattern>
 	</servlet-mapping>
@@ -38,4 +39,90 @@
 		<url-pattern>/servlet01/servlet04</url-pattern>
 	</servlet-mapping>
 
+
+	<!-- 필터 설정 -->
+	<filter>
+		<filter-name>f03filter</filter-name>
+		<filter-class>filter01.f03filter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>f03filter</filter-name>
+		<url-pattern>/filter01/s03</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>f04filter</filter-name>
+		<filter-class>filter01.f04filter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>f04filter</filter-name>
+		<url-pattern>/filter01/s04</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>f05filter</filter-name>
+		<filter-class>filter02.f05filter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>f05filter</filter-name>
+		<url-pattern>/filterex2/s01</url-pattern>
+		<url-pattern>/filterex2/s02</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>f06filter</filter-name>
+		<filter-class>filter02.f06filter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>f06filter</filter-name>
+		<url-pattern>/filterex02/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>f07filter</filter-name>
+		<filter-class>filter02.f07filter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>f07filter</filter-name>
+		<url-pattern>/filterex02/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>f08filter</filter-name>
+		<filter-class>filter03.f08filter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>f08filter</filter-name>
+		<url-pattern>/filterex3/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>f09filter</filter-name>
+		<filter-class>filter03.f09filter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>f09filter</filter-name>
+		<url-pattern>/filterex3/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>f10MemberFilter</filter-name>
+		<filter-class>filter04.f10MemberFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>f10MemberFilter</filter-name>
+		<url-pattern>/filterex4/member</url-pattern>
+	</filter-mapping>
+	
+	
+	<!-- ServletContextListener설정 -->
+	<listener>
+		<listener-class>listener01.AppListener04</listener-class>
+	</listener>
+	<listener>
+		<listener-class>listener01.AppListener03</listener-class>
+	</listener>
+	<listener>
+		<listener-class>listener01.AppListener05</listener-class>
+	</listener>
+	
 </web-app>

@@ -5,8 +5,6 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -17,16 +15,16 @@ import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
 /**
- * Servlet implementation class JDBC05Servlet
+ * Servlet implementation class JDBC06Servlet
  */
-@WebServlet("/jdbc01/s05")
-public class JDBC05Servlet extends HttpServlet {
+@WebServlet("/jdbc01/s06")
+public class JDBC06Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public JDBC05Servlet() {
+    public JDBC06Servlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -35,33 +33,27 @@ public class JDBC05Servlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//사전작업
 		ServletContext application = request.getServletContext();
 		DataSource pool = (DataSource) application.getAttribute("dbpool");
 		Connection con = null;
 		Statement stmt = null;
 		ResultSet rs = null;
 		
-		String customerName = "";		
-		String contactName = "";
-		String Address = "";
-				
-		//request분석/가공
+		String lastName = "";
+		String firstName = "";
 		
-		//business logic
-		String sql = "SELECT CustomerName, ContactName, Address FROM Customers WHERE CustomerID = 1";
+		String sql = "SELECT LastName, FirstName FROM Employees WHERE EmployeeID = 1";
 		
 		try {
 			con = pool.getConnection();
 			stmt = con.createStatement();
 			rs = stmt.executeQuery(sql);
-
+			
 			if(rs.next()) {
-				customerName = rs.getString(1);
-				contactName = rs.getString(2);
-				Address = rs.getString(3);
+				lastName = rs.getString(1);
+				firstName = rs.getString(2);
 			}
-			System.out.println("JDBC05 실행!");
+			System.out.println("jdbc06 실행!!");
 		}catch(Exception e) {
 			e.printStackTrace();
 		}finally {
@@ -91,12 +83,10 @@ public class JDBC05Servlet extends HttpServlet {
 			}
 		}
 		
-		//add attribute
-		request.setAttribute("customerName", customerName);
-		request.setAttribute("contactName", contactName);
-		request.setAttribute("Address", Address);
-		//forward/redirect
-		String path = "/WEB-INF/view/jdbc01/v05.jsp";
+		request.setAttribute("lastName", lastName );
+		request.setAttribute("firstName", firstName);
+	
+		String path = "/WEB-INF/view/jdbc01/v06.jsp";
 		request.getRequestDispatcher(path).forward(request, response);
 	}
 

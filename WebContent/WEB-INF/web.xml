@@ -113,6 +113,16 @@
 		<url-pattern>/filterex4/member</url-pattern>
 	</filter-mapping>
 	
+	<!-- Book App Character Encoding Filter -->
+	<filter>
+		<filter-name>BookCharEncodingFilter</filter-name>
+		<filter-class>servlet07.F01BookCharEncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>BookCharEncodingFilter</filter-name>
+		<url-pattern>/servlet07/*</url-pattern>
+	</filter-mapping>
+	
 	
 	<!-- ServletContextListener설정 -->
 	<listener>

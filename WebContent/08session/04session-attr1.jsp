@@ -11,7 +11,7 @@
 </head>
 <body>
 <%-- set을 이용한 session --%>
-<form action="04attr2.jsp">
+<form action="04session-attr2.jsp">
 	<select name="food" id="">
 		<option value="banana">banana</option>
 		<option value="apple">apple</option>

@@ -11,7 +11,7 @@
 </head>
 <body>
 <%-- Map을 이용한 session --%>
-<form action="05attr2.jsp">
+<form action="05session-attr2.jsp">
 	<select name="food" id="">
 		<option value="banana">banana</option>
 		<option value="apple">apple</option>

@@ -29,7 +29,7 @@ if(food != null){
 }
 %>
 
-<a href="05attr1.jsp">선택하기</a>
+<a href="05session-attr1.jsp">선택하기</a>
 
 <div>
 <h1>선택한 음식들</h1>

@@ -19,7 +19,6 @@
 		<option value="melon">melon</option>
 		<option value="water">water</option>
 	</select>
-	<br>
 	<input type="submit" value="등록">
 </form>
 </body>

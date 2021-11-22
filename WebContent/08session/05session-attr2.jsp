@@ -21,9 +21,10 @@ if(map == null){
 String food = request.getParameter("food");
 
 if(food != null){
-	if(map.get(food) == null){
-		map.put(food,1);
-	}else{
+	if(map.get(food) == null){ //Map에 저장되어있지 않은 food일경우
+		map.put(food,1); //key= food, value = 1 저장시킴
+	}else{ //Map에 이미 저장되어있는 food인경우
+		//key = food, value = 원래 값 +1 저장시킴
 		map.put(food, map.get(food)+1);
 	}
 }
@@ -37,7 +38,7 @@ if(food != null){
 	<%
 	Set<String> keys = map.keySet();
 	for(String key : keys){
-	%>
+	%> <%--맵을 사용하여 음식이름과, 그 음식을 몇번 선택했는지 출력 --%>
 		<li><%= key %> : <%= map.get(key) %></li>
 	<%	
 	}

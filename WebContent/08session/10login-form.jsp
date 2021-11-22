@@ -12,7 +12,7 @@
 <body>
 <h1>로그인</h1>
 <form action="10process.jsp" method="post">
-	<input type="text" placeholder="아이디">
+	<input type="text" name="userid" placeholder="아이디">
 	<br>
 	<input type="password" name="pw" placeholder="암호">
 	<br>

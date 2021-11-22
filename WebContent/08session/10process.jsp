@@ -6,7 +6,7 @@
 <%
 //로그인 관련 작업
 String userid = request.getParameter("userid");
-session.setAttribute("name", userid);
+session.setAttribute("user", userid);
 //main.jsp로 리디렉션
 response.sendRedirect("10main.jsp");
 %>

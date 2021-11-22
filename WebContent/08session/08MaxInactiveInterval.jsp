@@ -10,7 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%-- 세션 유효시간 설정 --%>
+<%-- 브라우저 세션 유효시간 설정 --%>
 <h1>MaxInactiveInterval</h1>
 <%
 session.setMaxInactiveInterval(10); //10초

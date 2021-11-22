@@ -57,7 +57,7 @@ public class S05BookModifyServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//한글인코딩
-		request.setCharacterEncoding("utf-8");
+		//request.setCharacterEncoding("utf-8");
 		
 		//사전작업
 		HttpSession session = request.getSession();

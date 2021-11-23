@@ -11,8 +11,8 @@
 </head>
 <body>
 <h1>expression language(EL)</h1>
-<p>작성법 : \${attribute }</p>
-<p>jsp에 출력용으로 사용됨.</p>
+<p>EL 작성법 : ${attribute }</p>
+<p>jsp 출력용 작성법 : \${attribute }</p>
 
 <hr>
 <h1>예제</h1>

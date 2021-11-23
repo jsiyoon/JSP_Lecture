@@ -78,7 +78,7 @@ public class JDBC16Servlet extends HttpServlet {
 		request.setAttribute("list", list);
 
 		// 5. forward/redirect
-		String path = "/WEB-INF/view/jdbc02/v10.jsp";
+		String path = "/WEB-INF/view/jdbc03/v16.jsp";
 		request.getRequestDispatcher(path).forward(request, response);
 	}
 

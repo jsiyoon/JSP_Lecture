@@ -21,8 +21,10 @@ request.setAttribute("new data", "new req data");
 session.setAttribute("new data", "new session data");
 application.setAttribute("new data", "new app data");
 %>
-<p>\${data } : ${data }</p><%--우선 순위에 따라 pageContext값이 출력됨. --%>
+<%--우선 순위에 따라 pageContext값이 출력됨. --%>
+<p>\${data } : ${data }</p>
 
+<%-- 우선순위 상관없이 출력됨. --%>
 <p>\${pageScope.data } : ${pageScope.data }</p>
 <p>\${requestScope.data } : ${requestScope.data }</p>
 <p>\${sessionScope.data } : ${sessionScope.data }</p>

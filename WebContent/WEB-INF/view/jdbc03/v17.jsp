@@ -14,7 +14,7 @@
 <body>
 <div class="container">
 	<div class="row">
-		<div class="col">
+		<div class="col-5">
 			<form action="">
 			<div class="form-group">
 				<label for="select1">국가 선택</label>
@@ -24,9 +24,8 @@
 						<option value="${country }" ${country eq param.country ? 'selected' : '' }>${country }</option>
 					</c:forEach>
 				</select>
+				<input type="submit" value="검색" class="btn btn-primary">
 			</div>
-			
-			<input type="submit" value="검색" class="btn btn-primary">
 			</form>
 		</div>
 	</div>

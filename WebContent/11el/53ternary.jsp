@@ -13,7 +13,7 @@
 <body>
 <h1>삼항 연산자</h1>
 <%
-pageContext.setAttribute("age", 18);
+pageContext.setAttribute("age", 20);
 %>
 <p>${age > 18 ? "old enough" : "too young"}</p>
 </body>

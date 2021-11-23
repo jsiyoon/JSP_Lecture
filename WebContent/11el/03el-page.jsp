@@ -27,7 +27,10 @@ pageContext.setAttribute("pageAttr3", true);
 <p>el : ${pageAttr2 }</p>
 <p>java code : <%= pageContext.getAttribute("pageAttr3") %></p>
 <p>el : ${pageAttr3 }</p>
-<p>java code : <%= pageContext.getAttribute("pageAttr4") %></p><%-- 값이 없는 경우 null출력 --%>
-<p>el : ${pageAttr4 }</p> <%-- 값이 없는 경우 아무것도 출력하지 않음 --%>
+
+<%-- 기본표현법 : 값이 없는 경우 null출력 --%>
+<p>java code : <%= pageContext.getAttribute("pageAttr4") %></p>
+<%-- EL : 값이 없는 경우 아무것도 출력하지 않음 --%>
+<p>el : ${pageAttr4 }</p> 
 </body>
 </html>

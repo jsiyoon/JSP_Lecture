@@ -16,7 +16,8 @@ public class SupplierDAO {
 
 		String sql = "SELECT DISTINCT Country FROM Suppliers ORDER BY Country";
 
-		try (Statement stmt = con.createStatement(); ResultSet rs = stmt.executeQuery(sql);) {
+		try (Statement stmt = con.createStatement(); 
+				ResultSet rs = stmt.executeQuery(sql);) {
 			while (rs.next()) {
 				list.add(rs.getString(1));
 			}
@@ -137,7 +138,7 @@ public class SupplierDAO {
 			stmt.setInt(1, supplierID);
 			try(ResultSet rs = stmt.executeQuery()) {
 				if(rs.next()) {
-					String supplierName = rs.getString("SupplierName");
+					String supplierName = rs.getString("supplierName");
 					String contactName = rs.getString("contactName");
 					String address = rs.getString("address");
 					String city = rs.getString("city");
@@ -155,7 +156,7 @@ public class SupplierDAO {
 					supplier.setPhone(phone);
 					
 				}
-			} 
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

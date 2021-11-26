@@ -12,7 +12,6 @@
 </head>
 <body>
 <h1>choose</h1>
-
 <c:choose>
 	<c:when test="${param.age <= 10 }">
 		<p>어린이용</p>

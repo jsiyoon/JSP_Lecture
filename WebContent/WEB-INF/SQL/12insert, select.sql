@@ -18,3 +18,4 @@ CREATE TABLE mytable11(
     age INT,
     birth DATE
 );
+SELECT * FROM mytable11;

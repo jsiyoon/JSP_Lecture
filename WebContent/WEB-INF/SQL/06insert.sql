@@ -26,3 +26,9 @@ INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Cou
 VALUES ('bts', 'CentralPark', 'Manhattan', 'NY', '54321', 'USA');
 
 SELECT * FROM Suppliers ORDER BY SupplierID DESC;
+
+INSERT INTO Suppliers(SupplierName, ContactName, Address, City, PostalCode, Country, Phone)
+VALUES('bts', 'CentralPark', 'Manhattan', 'NY', '54321', 'USA','1244789');
+
+INSERT INTO Suppliers(SupplierName, Address)
+VALUES('steven', 'USA');

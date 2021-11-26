@@ -11,9 +11,22 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>jstl core if연습</h1>
+
+<%-- 기존의 JSP : 스크립트코드 + HTML코드 뒤섞임 --%>
+<% 
+	String food = request.getParameter("food"); 
+	if(food.equals("apple")){
+%>
+		<h3>사과 입니다.</h3>
+<%
+	}
+%>
+
+<hr>
+
+<%-- JSTL을 사용한 if문 --%>
 <c:if test="${param.food eq 'apple' }">
-	<p>사과</p>
+	<h3>사과 입니다.</h3>
 </c:if>
 </body>
 </html>

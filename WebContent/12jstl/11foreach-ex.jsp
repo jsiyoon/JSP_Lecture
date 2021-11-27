@@ -11,7 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>foreach-구구단 2단</h1>
+<h1>forEach-구구단 2단</h1>
 <c:forEach begin="1" end="9" var="i">
 	<p>2 X ${i } = ${2*i }</p>
 </c:forEach>

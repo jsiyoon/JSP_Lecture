@@ -11,7 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>foreach 구구단 ${param.dan }단</h1>
+<h1>forEach 구구단 ${param.dan }단</h1>
 
 <c:if test="${empty param.dan }">
 	<p>단을 입력해주세요.</p>

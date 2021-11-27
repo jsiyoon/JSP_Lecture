@@ -15,18 +15,18 @@
 
 <c:forEach begin="1" end="3">
 	<p>반복할 코드</p>
-</c:forEach>
+</c:forEach> <hr>
 
 <c:forEach begin="5" end="7">
 	<p>반복할 코드2</p>
-</c:forEach>
+</c:forEach> <hr>
 
 <c:forEach begin="1" end="10" step="2">
 	<p>반복할 코드3</p>
-</c:forEach>
+</c:forEach><hr>
 
 <c:forEach begin="1" end="10" step="2" var="i">
 	<p>${i } : 반복할 코드4</p>
-</c:forEach>
+</c:forEach> <hr>
 </body>
 </html>

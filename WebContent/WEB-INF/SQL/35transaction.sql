@@ -1,6 +1,7 @@
 USE test;
 
 -- transcation : 하나의 업무 단위
+-- autocommit : 변경 작업에 대한 SQL자체 바로 반영되는 것
 
 -- 예 : 돈을 송금
 -- 1. 하나의 계좌에서 출금

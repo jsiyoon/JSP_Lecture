@@ -11,7 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class="conatiner">
+	<div class="container">
 		<div class="row">
 			<div class="col-3">
 				<nav class="nav flex-column">
